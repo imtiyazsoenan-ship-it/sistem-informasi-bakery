@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rencana Sistem Informasi Bakery - Premier Vibe</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandPurple: '#2C1245',
+                        brandPurpleLight: '#4A2172',
+                        brandNeon: '#00FF85', // Hijau Neon ala Premier League
+                        brandDark: '#12071F',
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(0, 255, 133, 0.4);
+        }
+        .neon-glow-text {
+            text-shadow: 0 0 10px rgba(0, 255, 133, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-gray-100 font-sans antialiased selection:bg-brandNeon selection:text-brandDark">
+
+    <!-- Header & Navigation -->
+    <header class="sticky top-0 z-50 bg-brandPurple/90 backdrop-blur-md border-b border-brandNeon/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-brandNeon flex items-center justify-center text-brandDark font-black text-xl neon-glow">
+                    <i class="fa-solid fa-bread-slice"></i>
+                </div>
+                <span class="text-xl font-black tracking-wider text-white">BAKERY<span class="text-brandNeon">.SYS</span></span>
+            </div>
+            <nav class="hidden md:flex space-x-8 font-medium">
+                <a href="#fitur" class="hover:text-brandNeon transition-colors">Fitur Utama</a>
+                <a href="#timeline" class="hover:text-brandNeon transition-colors">Timeline</a>
+                <a href="#arsitektur" class="hover:text-brandNeon transition-colors">Arsitektur</a>
+                <a href="#tim" class="hover:text-brandNeon transition-colors">Tim</a>
+            </nav>
+            <a href="#kontak" class="bg-brandNeon text-brandDark font-bold px-5 py-2.5 rounded-lg hover:bg-emerald-400 transition-all neon-glow">
+                Mulai Projek
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-24 lg:py-32 bg-gradient-to-b from-brandPurple to-brandDark">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#00FF85_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <span class="inline-block bg-brandNeon/10 text-brandNeon border border-brandNeon/30 text-sm font-semibold px-4 py-1.5 rounded-full mb-6 neon-glow">
+                ⚡ Matchday Rencana Sistem Informasi
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6">
+                Revolusi Toko Roti dengan <br><span class="text-brandNeon neon-glow-text">Teknologi Modern</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg sm:text-xl text-gray-300 mb-10">
+                Rencana strategis pembangunan Sistem Informasi Manajemen Bakery terintegrasi untuk efisiensi produksi, manajemen inventaris, dan lonjakan penjualan.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#fitur" class="bg-brandNeon text-brandDark font-bold px-8 py-4 rounded-xl hover:bg-emerald-400 transition-all text-lg neon-glow flex items-center justify-center space-x-2">
+                    <span>Jelajahi Rencana</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#arsitektur" class="bg-brandPurpleLight/50 border border-brandNeon/30 text-white font-bold px-8 py-4 rounded-xl hover:bg-brandPurpleLight transition-all text-lg flex items-center justify-center space-x-2">
+                    <span>Lihat Teknologi</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fitur Utama -->
+    <section id="fitur" class="py-20 bg-brandDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-black mb-4">Fitur Utama <span class="text-brandNeon">Sistem Informasi</span></h2>
+                <p class="text-gray-400 max-w-xl mx-auto">Modul-modul andalan yang akan dibangun untuk mengoptimalkan operasional bakery dari hulu ke hilir.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-brandPurple/50 border border-brandNeon/20 p-8 rounded-2xl hover:border-brandNeon transition-all group">
+                    <div class="w-14 h-14 bg-brandNeon/10 rounded-xl flex items-center justify-center text-brandNeon text-2xl mb-6 group-hover:bg-brandNeon group-hover:text-brandDark transition-all">
+                        <i class="fa-solid fa-boxes-stacked"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Manajemen Inventaris</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Pencatatan bahan baku real-time, peringatan stok kedaluwarsa, dan otomatisasi restok tepung, mentega, serta ragi.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-brandPurple/50 border border-brandNeon/20 p-8 rounded-2xl hover:border-brandNeon transition-all group">
+                    <div class="w-14 h-14 bg-brandNeon/10 rounded-xl flex items-center justify-center text-brandNeon text-2xl mb-6 group-hover:bg-brandNeon group-hover:text-brandDark transition-all">
+                        <i class="fa-solid fa-cash-register"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">POS & Penjualan Cepat</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Sistem kasir interaktif yang mendukung berbagai metode pembayaran digital, cetak struk kilat, dan integrasi member/loyalitas.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-brandPurple/50 border border-brandNeon/20 p-8 rounded-2xl hover:border-brandNeon transition-all group">
+                    <div class="w-14 h-14 bg-brandNeon/10 rounded-xl flex items-center justify-center text-brandNeon text-2xl mb-6 group-hover:bg-brandNeon group-hover:text-brandDark transition-all">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Analitik & Laporan</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Dashboard performa penjualan harian, produk roti terlaris, serta laporan keuangan
