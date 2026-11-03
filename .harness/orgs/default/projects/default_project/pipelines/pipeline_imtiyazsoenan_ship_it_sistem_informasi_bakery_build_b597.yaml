@@ -1,0 +1,23 @@
+pipeline:
+  id: pipeline_imtiyazsoenan_ship_it_sistem_informasi_bakery_build_b597
+  name: pipeline_imtiyazsoenan_ship_it_sistem_informasi_bakery_build_b597
+  stages:
+    - id: build
+      name: Build
+      runtime: cloud
+      clone:
+        enabled: true
+      cache:
+        enabled: true
+      steps:
+        - id: validate_files
+          name: Validate Files
+          run:
+            shell: bash
+            script: |-
+              echo "Validating static HTML files..."
+              test -f index.html && echo "index.html exists"
+              test -f README.md && echo "README.md exists"
+              echo "Static files validated successfully."
+  tags:
+    onboarding: "true"
